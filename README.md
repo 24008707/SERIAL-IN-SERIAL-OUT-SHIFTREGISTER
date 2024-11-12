@@ -42,37 +42,26 @@ Developed by: **VISAL R**
 RegisterNumber: **24008707**
 
 //shift register_SISO
-
 module shift_reg10(clk, sin, q);
-
 input clk;
-
 input sin;
-
 output [3:0] q;
-
 reg [3:0] q;
-
 always @(posedge clk)
-
 begin
-
 q[0] <= sin;
-
 q[1] <= q[0];
-
 q[2] <= q[1];
-
 q[3] <= q[2];
-
 end
-
-endmodlue
+endmodule
 
 **RTL LOGIC FOR SISO Shift Register**
+
 ![siso](https://github.com/user-attachments/assets/3234edc2-8597-4ad7-9b79-f5f45f267d36)
 
 **TIMING DIGRAMS FOR SISO Shift Register**
+
 ![OUTPUT SISO](https://github.com/user-attachments/assets/41e7ee04-84d3-40da-8293-e28b0e14063a)
 
 **RESULTS**
